@@ -35,8 +35,8 @@ function App() {
         <img className='img-fluid' src={topbar} alt="" />
       </div>
       {/* Navbar section */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light container">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -45,23 +45,23 @@ function App() {
 
             <div className="d-flex">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <a className="nav-link active" style={{ fontWeight: "400", fontSize: "14px" }} aria-current="page" href="#">This Month</a>
+                <li className="nav-item me-5">
+                  <a className="nav-link text-dark" style={{ fontWeight: "400", fontSize: "14px" }} aria-current="page" href="#">THIS MONTH</a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" style={{ fontWeight: "400", fontSize: "14px" }} href="#">Skin</a>
+                <li className="nav-item me-5">
+                  <a className="nav-link text-dark" style={{ fontWeight: "400", fontSize: "14px" }} href="#">SKIN</a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" style={{ fontWeight: "400", fontSize: "14px" }} href="#">Hair</a>
+                <li className="nav-item me-5">
+                  <a className="nav-link text-dark" style={{ fontWeight: "400", fontSize: "14px" }} href="#">HAIR</a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" style={{ fontWeight: "400", fontSize: "14px" }} href="#">Bath</a>
+                <li className="nav-item me-5">
+                  <a className="nav-link text-dark" style={{ fontWeight: "400", fontSize: "14px" }} href="#">BARK</a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" style={{ fontWeight: "400", fontSize: "14px" }} href="#">Sale</a>
+                <li className="nav-item me-5">
+                  <a className="nav-link text-dark" style={{ fontWeight: "400", fontSize: "14px" }} href="#">SALE</a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link rounded-pill px-3" style={{ borderColor: "black", fontWeight: "400", fontSize: "14px" }} href="#">LOG IN<i className="fa-solid fa-angle-right ms-2"></i></a>
+                <li className="nav-item me-5">
+                  <a className="nav-link rounded-pill px-4 text-dark" style={{ border: "2px solid black", fontWeight: "400", fontSize: "14px" }} href="#">LOG IN<i className="fa-solid fa-angle-right ms-2"></i></a>
                 </li>
               </ul>
             </div>
@@ -90,13 +90,13 @@ function App() {
       <div className='container'>
         <div className='d-flex mx-auto mb-5'>
           <div className='mx-auto mt-5'>
-            <h1 className='font-secondary' style={{ fontWeight: "400", fontSize: "48px" }}>Pick Your Plan</h1>
+            <h1 className='font-secondary mb-0' style={{ fontWeight: "400", fontSize: "48px" }}>Pick Your Plan</h1>
             <img src={underline} alt="" />
           </div>
         </div>
 
         <div className='row'>
-          <div className='col-lg-6 col-md-6 col-sm-12 pe-lg-5 ps-lg-5'>
+          <div className='col-lg-6 col-md-6 col-sm-12 pe-lg-5 ps-lg-5 mb-3'>
             <div className="card" style={card_1}>
               <div className="card-body text-center" style={{ margin: '2.5rem 0' }}>
                 <h5 className="card-title font-secondary" style={{ fontWeight: "400", fontSize: "36px" }}>Monthly</h5>
@@ -107,7 +107,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='col-lg-6 col-md-6 col-sm-12 pe-lg-5 ps-lg-5'>
+          <div className='col-lg-6 col-md-6 col-sm-12 pe-lg-5 ps-lg-5 mb-3'>
             <div className="card" style={card_2}>
               <div className="card-body text-center" style={{ margin: '2.5rem 0' }}>
                 <h5 className="card-title font-secondary" style={{ fontWeight: "400", fontSize: "36px" }}>Yearly</h5>
@@ -126,38 +126,53 @@ function App() {
       <div className='container'>
         <div className='d-flex mx-auto'>
           <div className='mx-auto mt-3 mb-3'>
-            <h1 className='font-secondary' style={{ fontWeight: "400", fontSize: "48px" }}>How it works?</h1>
+            <h1 className='font-secondary mb-0' style={{ fontWeight: "400", fontSize: "48px" }}>How it works?</h1>
             <img src={underline1} alt="" />
           </div>
         </div>
 
-        <div className='container d-flex mb-3'>
-          <img src={girl1} alt="" />
-          <div className='d-flex align-items-center ms-4'>
-            <div>
-              <h2 className='font-secondary' style={{ fontWeight: "400", fontSize: "36px" }}>Setup your profile &
-                preferences</h2>
-              <p style={{ fontWeight: "400", fontSize: "18px" }}>Once you create an account, you can start to tell us your likes and dislikes so we can tailor the experience just for you.</p>
+        <div className='container mb-3'>
+          <div className="row">
+            <div className="col-lg-5 col-md-6 col-12">
+              <img src={girl1} alt="" className="img-fluid" />
+            </div>
+            <div className="col-lg-7 col-md-6 col-12 d-flex align-items-center">
+              <div>
+                <h2 className='font-secondary' style={{ fontWeight: "400", fontSize: "36px" }}>Setup your profile &
+                  preferences</h2>
+                <p style={{ fontWeight: "400", fontSize: "18px" }}>Once you create an account, you can start to tell us your likes and dislikes so we can tailor the experience just for you.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div className='mb-5'>
-          <img className='img-fluid' src={box1} alt="" />
-          <div>
-            <h2 className='font-secondary' style={{ fontWeight: "400", fontSize: "36px" }}>Review your
-              custom box</h2>
-            <p style={{ fontWeight: "400", fontSize: "18px" }}>Once we get to know you, we will show you the box we’ve crafted. This is your chance to approve it before we ship it to your house.</p>
-          </div>
-        </div>
-        <div className='d-flex'>
-          <img src={girl2} alt="" />
-          <div className='d-flex align-items-center ms-4'>
+
+        <div className="row">
+          <div className="col-lg-6"> </div>
+          <div className="col-lg-6">
+            <div><img className='img-fluid' src={box1} alt="" /></div>
+
             <div>
-              <h2 className='font-secondary' style={{ fontWeight: "400", fontSize: "36px" }}>Try it on at home</h2>
-              <p style={{ fontWeight: "400", fontSize: "18px" }}>Your box will arrive within 3-5 days (usually sooner) and you get the joy to unbox your Upbox. Try it all on and send back whatever you’re not in love with.</p>
+              <h2 className='font-secondary' style={{ fontWeight: "400", fontSize: "36px" }}>Review your
+                custom box</h2>
+              <p style={{ fontWeight: "400", fontSize: "18px" }}>Once we get to know you, we will show you the box we’ve crafted. This is your chance to approve it before we ship it to your house.</p>
             </div>
           </div>
         </div>
+
+        <div className='container mb-3'>
+          <div className="row">
+            <div className="col-lg-5 col-md-6 col-12 pe-0">
+              <img src={girl2} alt="" className="img-fluid" />
+            </div>
+            <div className="col-lg-7 col-md-6 col-12 d-flex align-items-center">
+              <div>
+                <h2 className='font-secondary' style={{ fontWeight: "400", fontSize: "36px" }}>Try it on at home</h2>
+                <p style={{ fontWeight: "400", fontSize: "18px" }}>Your box will arrive within 3-5 days (usually sooner) and you get the joy to unbox your Upbox. Try it all on and send back whatever you’re not in love with.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className='d-flex align-items-center justify-content-center mt-5 mb-5'>
           <a style={{ backgroundColor: "#FFFFFF", borderColor: "#EF8094", color: "black", fontWeight: "400", fontSize: "16px" }} href="#" className="btn btn-primary rounded-pill px-3">TRY IT FOR YOURSELF<i className="fa-solid fa-angle-right ms-2"></i></a>
         </div>
@@ -167,36 +182,31 @@ function App() {
       <div style={{ backgroundColor: "#F5F8FF" }} className="mt-5 mb-3">
         <h1 className='text-center pt-5 pb-3 font-secondary' style={{ fontWeight: "400", fontSize: "48px" }}>Social Posts</h1>
         <div className='row mx-3'>
-          <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className="card" style={{ width: "18rem" }}>
-              <img src={img1} className="card-img-top" alt="..." />
-              <div className="card-body">
+
+          <div className="container px-4">
+            <div className="row gx-4 gy-5">
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div>
+                  <img src={img1} alt="" />
+                </div>
                 <p className="card-text" style={{ fontWeight: "400", fontSize: "26px" }}>How to rock the lip look that turns heads</p>
               </div>
-            </div>
-          </div>
-          <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className="card" style={{ width: "18rem" }}>
-              <img src={img2} className="card-img-top" alt="..." />
-              <div className="card-body">
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div>
+                  <img src={img2} alt="" />
+                </div>
                 <p className="card-text" style={{ fontWeight: "400", fontSize: "26px" }}>Find the perfect shade for the season</p>
               </div>
-            </div>
-          </div>
-
-          <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className="card" style={{ width: "18rem" }}>
-              <img src={img3} className="card-img-top" alt="..." />
-              <div className="card-body">
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div>
+                  <img src={img3} alt="" />
+                </div>
                 <p className="card-text" style={{ fontWeight: "400", fontSize: "26px" }}>The 5 eye shadow secrets you never knew</p>
               </div>
-            </div>
-          </div>
-
-          <div className='col-lg-3 col-md-6 col-sm-12'>
-            <div className="card" style={{ width: "18rem" }}>
-              <img src={img4} className="card-img-top" alt="..." />
-              <div className="card-body">
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div>
+                  <img src={img4} alt="" />
+                </div>
                 <p className="card-text" style={{ fontWeight: "400", fontSize: "26px" }}>The pro-tips for at home hair dying</p>
               </div>
             </div>
@@ -209,11 +219,66 @@ function App() {
       </div>
 
       {/* Footer section */}
-      <footer style={{ backgroundColor: "#EEEEEE" }} className="mx-3 mb-3">
-        <h5>Footer</h5>
-        <p>footer link</p>
-        <div style={{ height: "45px" }}></div>
-        <p>footer end</p>
+      <footer style={{ backgroundColor: "#EEEEEE", border: "2px solid #C4C4C4", borderRadius: "6px" }} className="mx-3 mb-3">
+        <div>
+          <div className='d-flex justify-content-between' style={{ margin: "5px 10px 0 10px" }}>
+            <div>
+              <img src="" alt="" />
+            </div>
+            <div className='d-flex align-items-center'>
+              <img src="" alt="" className="img-fluid ms-3" />
+              <img src="" alt="" className="img-fluid ms-3" />
+              <img src="" alt="" className="img-fluid ms-3" />
+              <img src="" alt="" className="img-fluid ms-3" />
+            </div>
+          </div>
+
+          <div style={{ margin: "5px 10px 0 10px" }}>
+            <div className="row">
+              <div className="col-lg-3">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+              <div className="col-lg-3">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+              <div className="col-lg-3">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+              <div className="col-lg-3">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div style={{ width: "100%", height: "2px", backgroundColor: "#C4C4C4" }}>
+          </div>
+
+          <div className='d-flex justify-content-around'>
+            <p className='m-0'>© 2020 Quest AI. Upbox is a Sample Project and open source design project free for personal and commercial use.</p>
+            <p>Terms</p>
+            <p>Privacy Policy</p>
+          </div>
+        </div>
       </footer>
     </div>
   );
