@@ -193,6 +193,13 @@ function App() {
         </div>
       </div>
 
+      {/* Footer section */}
+      <footer style={{ backgroundColor: "#EEEEEE" }} className="mx-3 mb-3">
+        <h5>Footer</h5>
+        <p>footer link</p>
+        <div style={{ height: "45px" }}></div>
+        <p>footer end</p>
+      </footer>
     </div>
   );
 }
