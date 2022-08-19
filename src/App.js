@@ -55,20 +55,6 @@ function App() {
       </nav>
 
 
-      {/* Banner section */}
-      <div className='row mx-0' style={{ backgroundColor: "#F5F8FF" }}>
-        <div className='col-lg-5 px-5 d-flex align-items-center'>
-          <div>
-            <h1 style={{ fontWeight: "400", fontSize: "48px" }}>Look good without
-              leaving your house.</h1>
-            <p>Upbox is the easiest way to look your best without having to hunt for the perfect makeup combination. Our stylists curate the latest trends and send them directly to your door every month.</p>
-            <a style={{ backgroundColor: "#FFFFFF", borderColor: "#EF8094", color: "black" }} href="#" className="btn btn-primary rounded-pill px-3">SIGN UP<i className="fa-solid fa-angle-right ms-2"></i></a>
-          </div>
-        </div>
-        <div className='col-lg-7 px-0'>
-          <img className='img-fluid' src={box} alt="" />
-        </div>
-      </div>
 
       {/* Plan card section */}
       <div className='container'>
