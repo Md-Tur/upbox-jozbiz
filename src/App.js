@@ -13,6 +13,10 @@ import img3 from '../src/images/img3.png';
 import img4 from '../src/images/img4.png';
 import vector1 from '../src/images/Vector_left.png';
 import vector2 from '../src/images/Vector_right.png';
+import ig from '../src/images/ig.png';
+import fb from '../src/images/fb.png';
+import tw from '../src/images/tw.png';
+import sc from '../src/images/sc.png';
 
 function App() {
 
@@ -220,52 +224,52 @@ function App() {
 
       {/* Footer section */}
       <footer style={{ backgroundColor: "#EEEEEE", border: "2px solid #C4C4C4", borderRadius: "6px" }} className="mx-3 mb-3">
-        <div>
-          <div className='d-flex justify-content-between' style={{ margin: "5px 10px 0 10px" }}>
+        <div className='container'>
+          <div className='d-flex justify-content-between mt-4' style={{ margin: "5px 10px 0 10px" }}>
             <div>
-              <img src="" alt="" />
+              <img src={logo} style={{ height: "30px" }} alt="" />
             </div>
-            <div className='d-flex align-items-center'>
-              <img src="" alt="" className="img-fluid ms-3" />
-              <img src="" alt="" className="img-fluid ms-3" />
-              <img src="" alt="" className="img-fluid ms-3" />
-              <img src="" alt="" className="img-fluid ms-3" />
+            <div className='d-flex align-items-center icon'>
+              <img src={ig} alt="" className="img-fluid ms-3" />
+              <img src={fb} alt="" className="img-fluid ms-3" />
+              <img src={tw} alt="" className="img-fluid ms-3" />
+              <img src={sc} alt="" className="img-fluid ms-3" />
             </div>
           </div>
 
           <div style={{ margin: "5px 10px 0 10px" }}>
-            <div className="row">
-              <div className="col-lg-3">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+            <div className="row mt-5 mb-3">
+              <div className="col-lg-3 col-md-6 col-6">
+                <p className='footer-content' style={{ fontWeight: "400", fontSize: "20px" }}>UPBOX</p>
+                <p className='footer-content'>Upbox Bag</p>
+                <p className='footer-content'>Upbox Box Platinum</p>
+                <p className='footer-content'>Upbox Box VIP</p>
+                <p className='footer-content'>Deals</p>
+                <p className='footer-content'>Seasonal Items</p>
+                <p className='footer-content'>Upbox Promise</p>
               </div>
-              <div className="col-lg-3">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+              <div className="col-lg-3 col-md-6 col-6">
+                <p className='footer-content' style={{ fontWeight: "400", fontSize: "20px" }}>Find Us On</p>
+                <p className='footer-content'>Instagram</p>
+                <p className='footer-content'>Facebook</p>
+                <p className='footer-content'>TikTok</p>
+                <p className='footer-content'>SnapChat</p>
+                <p className='footer-content'>Twitter</p>
               </div>
-              <div className="col-lg-3">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+              <div className="col-lg-3 col-md-6 col-6">
+                <p className='footer-content' style={{ fontWeight: "400", fontSize: "20px" }}>Product</p>
+                <p className='footer-content'>Get the App</p>
+                <p className='footer-content'>Loyalty Program</p>
+                <p className='footer-content'>Affiliates</p>
+                <p className='footer-content'>Press</p>
               </div>
-              <div className="col-lg-3">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+              <div className="col-lg-3 col-md-6 col-6">
+                <p className='footer-content' style={{ fontWeight: "400", fontSize: "20px" }}>Help</p>
+                <p className='footer-content'>Returns</p>
+                <p className='footer-content'>FAQ</p>
+                <p className='footer-content'>Contact</p>
+                <p className='footer-content'>Community</p>
+                <p className='footer-content'>Videos</p>
               </div>
             </div>
           </div>
@@ -273,9 +277,9 @@ function App() {
           <div style={{ width: "100%", height: "2px", backgroundColor: "#C4C4C4" }}>
           </div>
 
-          <div className='d-flex justify-content-around'>
+          <div className='footer-bottom mt-3'>
             <p className='m-0'>© 2020 Quest AI. Upbox is a Sample Project and open source design project free for personal and commercial use.</p>
-            <p>Terms</p>
+            <p className='pe-5'>Terms</p>
             <p>Privacy Policy</p>
           </div>
         </div>
