@@ -1,18 +1,33 @@
 import './App.css';
 import topbar from '../src/images/TOPBAR 1.png';
 import logo from '../src/images/logo.png';
-import box from '../src/images/box.jpeg';
+import box from '../src/images/box.svg';
 import underline from '../src/images/underline.png';
 import underline1 from '../src/images/underline (1).png';
-import girl1 from '../src/images/girl1.jpeg';
-import box1 from '../src/images/box1.jpeg';
-import girl2 from '../src/images/girl2.jpeg';
+import girl1 from '../src/images/girl1.png';
+import box1 from '../src/images/box1.png';
+import girl2 from '../src/images/girl2.png';
 import img1 from '../src/images/img1.png';
 import img2 from '../src/images/img2.png';
 import img3 from '../src/images/img3.png';
 import img4 from '../src/images/img4.png';
+import vector1 from '../src/images/Vector_left.png';
+import vector2 from '../src/images/Vector_right.png';
 
 function App() {
+
+  const card_1 = {
+    backgroundImage: `url(${vector1})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat'
+  };
+
+  const card_2 = {
+    backgroundImage: `url(${vector2})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat'
+  };
+
   return (
     <div>
 
@@ -31,22 +46,22 @@ function App() {
             <div className="d-flex">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">This Month</a>
+                  <a className="nav-link active" style={{ fontWeight: "400", fontSize: "14px" }} aria-current="page" href="#">This Month</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Skin</a>
+                  <a className="nav-link" style={{ fontWeight: "400", fontSize: "14px" }} href="#">Skin</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Hair</a>
+                  <a className="nav-link" style={{ fontWeight: "400", fontSize: "14px" }} href="#">Hair</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Bath</a>
+                  <a className="nav-link" style={{ fontWeight: "400", fontSize: "14px" }} href="#">Bath</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Sale</a>
+                  <a className="nav-link" style={{ fontWeight: "400", fontSize: "14px" }} href="#">Sale</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link rounded-pill px-3" style={{ borderColor: "black" }} href="#">LOG IN<i className="fa-solid fa-angle-right ms-2"></i></a>
+                  <a className="nav-link rounded-pill px-3" style={{ borderColor: "black", fontWeight: "400", fontSize: "14px" }} href="#">LOG IN<i className="fa-solid fa-angle-right ms-2"></i></a>
                 </li>
               </ul>
             </div>
@@ -58,14 +73,16 @@ function App() {
       <div className='row mx-0' style={{ backgroundColor: "#F5F8FF" }}>
         <div className='col-lg-5 px-5 d-flex align-items-center'>
           <div>
-            <h1 style={{ fontWeight: "400", fontSize: "48px" }}>Look good without
+            <h1 className='font-secondary' style={{ fontWeight: "400", fontSize: "48px" }}>Look good without
               leaving your house.</h1>
-            <p>Upbox is the easiest way to look your best without having to hunt for the perfect makeup combination. Our stylists curate the latest trends and send them directly to your door every month.</p>
-            <a style={{ backgroundColor: "#FFFFFF", borderColor: "#EF8094", color: "black" }} href="#" className="btn btn-primary rounded-pill px-3">SIGN UP<i className="fa-solid fa-angle-right ms-2"></i></a>
+            <p style={{ fontWeight: "400", fontSize: "18px" }}>Upbox is the easiest way to look your best without having to hunt for the perfect makeup combination. Our stylists curate the latest trends and send them directly to your door every month.</p>
+            <a style={{ backgroundColor: "#FFFFFF", borderColor: "#EF8094", color: "black", fontWeight: "400", fontSize: "16px" }} href="#" className="btn btn-primary rounded-pill px-3">SIGN UP<i className="fa-solid fa-angle-right ms-2"></i></a>
           </div>
         </div>
         <div className='col-lg-7 px-0'>
-          <img className='img-fluid' src={box} alt="" />
+          <div>
+            <img className='img-fluid' src={box} alt="" />
+          </div>
         </div>
       </div>
 
@@ -73,89 +90,88 @@ function App() {
       <div className='container'>
         <div className='d-flex mx-auto mb-5'>
           <div className='mx-auto mt-5'>
-            <h1>Pick Your Plan</h1>
+            <h1 className='font-secondary' style={{ fontWeight: "400", fontSize: "48px" }}>Pick Your Plan</h1>
             <img src={underline} alt="" />
           </div>
         </div>
 
         <div className='row'>
-          <div className='col-lg-6 col-md-6 col-sm-12'>
-            <div className="card" style={{ width: "18rem" }}>
-              <div className="card-body text-center">
-                <h5 className="card-title">Monthly</h5>
-                <p className="card-text">$18/mo</p>
+          <div className='col-lg-6 col-md-6 col-sm-12 pe-lg-5 ps-lg-5'>
+            <div className="card" style={card_1}>
+              <div className="card-body text-center" style={{ margin: '2.5rem 0' }}>
+                <h5 className="card-title font-secondary" style={{ fontWeight: "400", fontSize: "36px" }}>Monthly</h5>
+                <p className="card-text" style={{ fontWeight: "400", fontSize: "44px" }}>$18/mo</p>
                 <div className='d-flex align-items-center justify-content-center'>
-                  <a style={{ backgroundColor: "#EF8094" }} href="#" className="btn btn-primary rounded-pill px-3 border-0">FIND YOUR BOX</a>
+                  <a style={{ backgroundColor: "#EF8094", fontWeight: "400", fontSize: "16px" }} href="#" className="btn btn-primary rounded-pill px-3 border-0">FIND YOUR BOX</a>
                 </div>
               </div>
             </div>
           </div>
-          <div className='col-lg-6 col-md-6 col-sm-12'>
-            <div className="card" style={{ width: "18rem" }}>
-              <div className="card-body text-center">
-                <h5 className="card-title">Yearly</h5>
-                <p className="card-text">$15/mo</p>
+          <div className='col-lg-6 col-md-6 col-sm-12 pe-lg-5 ps-lg-5'>
+            <div className="card" style={card_2}>
+              <div className="card-body text-center" style={{ margin: '2.5rem 0' }}>
+                <h5 className="card-title font-secondary" style={{ fontWeight: "400", fontSize: "36px" }}>Yearly</h5>
+                <p className="card-text" style={{ fontWeight: "400", fontSize: "44px" }}>$15/mo</p>
                 <div className='d-flex align-items-center justify-content-center'>
-                  <a style={{ backgroundColor: "#EF8094" }} href="#" className="btn btn-primary rounded-pill px-3 border-0">FIND YOUR BOX</a>
+                  <a style={{ backgroundColor: "#EF8094", fontWeight: "400", fontSize: "16px" }} href="#" className="btn btn-primary rounded-pill px-3 border-0">FIND YOUR BOX</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <p className='text-center mt-4 mb-5'>Your plan auto-renews at the end of 30 days from the 1st day you signed-up.</p>
+        <p className='text-center mt-4 mb-5' style={{ fontWeight: "400", fontSize: "18px" }}>Your plan auto-renews at the end of 30 days from the 1st day you signed-up.</p>
       </div>
 
       {/* works section */}
       <div className='container'>
         <div className='d-flex mx-auto'>
           <div className='mx-auto mt-3 mb-3'>
-            <h1>How it works?</h1>
+            <h1 className='font-secondary' style={{ fontWeight: "400", fontSize: "48px" }}>How it works?</h1>
             <img src={underline1} alt="" />
           </div>
         </div>
 
-        <div className='d-flex mb-3'>
+        <div className='container d-flex mb-3'>
           <img src={girl1} alt="" />
           <div className='d-flex align-items-center ms-4'>
             <div>
-              <h2>Setup your profile &
+              <h2 className='font-secondary' style={{ fontWeight: "400", fontSize: "36px" }}>Setup your profile &
                 preferences</h2>
-              <p>Once you create an account, you can start to tell us your likes and dislikes so we can tailor the experience just for you.</p>
+              <p style={{ fontWeight: "400", fontSize: "18px" }}>Once you create an account, you can start to tell us your likes and dislikes so we can tailor the experience just for you.</p>
             </div>
           </div>
         </div>
         <div className='mb-5'>
           <img className='img-fluid' src={box1} alt="" />
           <div>
-            <h2>Setup your profile &
-              preferences</h2>
-            <p>Once you create an account, you can start to tell us your likes and dislikes so we can tailor the experience just for you.</p>
+            <h2 className='font-secondary' style={{ fontWeight: "400", fontSize: "36px" }}>Review your
+              custom box</h2>
+            <p style={{ fontWeight: "400", fontSize: "18px" }}>Once we get to know you, we will show you the box we’ve crafted. This is your chance to approve it before we ship it to your house.</p>
           </div>
         </div>
         <div className='d-flex'>
           <img src={girl2} alt="" />
           <div className='d-flex align-items-center ms-4'>
             <div>
-              <h2>Setup your profile &
-                preferences</h2>
-              <p>Once you create an account, you can start to tell us your likes and dislikes so we can tailor the experience just for you.</p>
+              <h2 className='font-secondary' style={{ fontWeight: "400", fontSize: "36px" }}>Try it on at home</h2>
+              <p style={{ fontWeight: "400", fontSize: "18px" }}>Your box will arrive within 3-5 days (usually sooner) and you get the joy to unbox your Upbox. Try it all on and send back whatever you’re not in love with.</p>
             </div>
           </div>
         </div>
         <div className='d-flex align-items-center justify-content-center mt-5 mb-5'>
-          <a style={{ backgroundColor: "#FFFFFF", borderColor: "#EF8094", color: "black" }} href="#" className="btn btn-primary rounded-pill px-3">TRY IT FOR YOURSELF<i className="fa-solid fa-angle-right ms-2"></i></a>
+          <a style={{ backgroundColor: "#FFFFFF", borderColor: "#EF8094", color: "black", fontWeight: "400", fontSize: "16px" }} href="#" className="btn btn-primary rounded-pill px-3">TRY IT FOR YOURSELF<i className="fa-solid fa-angle-right ms-2"></i></a>
         </div>
       </div>
 
       {/* Social posts section */}
       <div style={{ backgroundColor: "#F5F8FF" }} className="mt-5 mb-3">
-        <h1 className='text-center pt-5 pb-3'>Social Posts</h1>
+        <h1 className='text-center pt-5 pb-3 font-secondary' style={{ fontWeight: "400", fontSize: "48px" }}>Social Posts</h1>
         <div className='row mx-3'>
           <div className='col-lg-3 col-md-6 col-sm-12'>
             <div className="card" style={{ width: "18rem" }}>
               <img src={img1} className="card-img-top" alt="..." />
               <div className="card-body">
-                <p className="card-text">How to rock the lip look that turns heads</p>
+                <p className="card-text" style={{ fontWeight: "400", fontSize: "26px" }}>How to rock the lip look that turns heads</p>
               </div>
             </div>
           </div>
@@ -163,7 +179,7 @@ function App() {
             <div className="card" style={{ width: "18rem" }}>
               <img src={img2} className="card-img-top" alt="..." />
               <div className="card-body">
-                <p className="card-text">Find the perfect shade for the season</p>
+                <p className="card-text" style={{ fontWeight: "400", fontSize: "26px" }}>Find the perfect shade for the season</p>
               </div>
             </div>
           </div>
@@ -172,7 +188,7 @@ function App() {
             <div className="card" style={{ width: "18rem" }}>
               <img src={img3} className="card-img-top" alt="..." />
               <div className="card-body">
-                <p className="card-text">The 5 eye shadow secrets you never knew</p>
+                <p className="card-text" style={{ fontWeight: "400", fontSize: "26px" }}>The 5 eye shadow secrets you never knew</p>
               </div>
             </div>
           </div>
@@ -181,14 +197,14 @@ function App() {
             <div className="card" style={{ width: "18rem" }}>
               <img src={img4} className="card-img-top" alt="..." />
               <div className="card-body">
-                <p className="card-text">The pro-tips for at home hair dying</p>
+                <p className="card-text" style={{ fontWeight: "400", fontSize: "26px" }}>The pro-tips for at home hair dying</p>
               </div>
             </div>
           </div>
 
         </div>
         <div className='d-flex align-items-center justify-content-center'>
-          <a style={{ backgroundColor: "#EF8094" }} href="#" className="btn btn-primary rounded-pill px-3 border-0 mt-5 mb-5">FOLLOW US ON INSTAGRAM</a>
+          <a style={{ backgroundColor: "#EF8094", fontWeight: "400", fontSize: "16px" }} href="#" className="btn btn-primary rounded-pill px-3 border-0 mt-5 mb-5">FOLLOW US ON INSTAGRAM</a>
         </div>
       </div>
 
